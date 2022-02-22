@@ -21,7 +21,7 @@ function myDeals(){
     document.getElementById("Deals").innerHTML = E+F;
 }
 function myColor(){
-    let C = "Text";
+    let C = "Blue Guac!";
     let result = C.fontcolor("blue");
     document.getElementById("Color").innerHTML = result;
 }
