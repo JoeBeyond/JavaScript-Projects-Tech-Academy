@@ -10,5 +10,5 @@ function myButton2(){
 }
 
 function mathFunction(){
-    document.getElementById("Math").innerHTML = A * B;
+    document.getElementById("Math").innerHTML = "1000 * 50 = " + A * B;
 }
