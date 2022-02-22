@@ -13,15 +13,15 @@ var D = "Combo Deals", Combo1 = " Rice and Beans Plate with 2 Corn Tortillas.", 
     Combo3 = " 1 Chile Relano with Rice and Beans."; //Multiple Child Variables nested in Parent Variable
 document.write(" We've chosen a combo-meal for you...") //Displays Text
 document.write(Combo2); //Invoke Object; Variable
-document.write(" That is 10.00\$ please. ") //A String with an Excape Character
+document.write(" That is 10.00\$ please. ") //A String with an Escape Character
 document.write(3+7) //Simple Expression
-var E = "Free Tacos!";
-var F = "Free Burritos!";
+var E = "Free Tacos!"; //Variable is text
+var F = "Free Burritos!"; //Variable is text
 function myDeals(){
-    document.getElementById("Deals").innerHTML = E+F;
+    document.getElementById("Deals").innerHTML = E+F; //A Function that Concatenates two Variables
 }
 function myColor(){
     let C = "Blue Guac!";
     let result = C.fontcolor("blue");
-    document.getElementById("Color").innerHTML = result;
+    document.getElementById("Color").innerHTML = result; //A Function that makes the Chosen Text of a Variable for this Function, turn Blue
 }
