@@ -15,3 +15,13 @@ document.write(" We've chosen a combo-meal for you...") //Displays Text
 document.write(Combo2); //Invoke Object; Variable
 document.write(" That is 10.00\$ please. ") //A String with an Excape Character
 document.write(3+7) //Simple Expression
+var E = "Free Tacos!";
+var F = "Free Burritos!";
+function myDeals(){
+    document.getElementById("Deals").innerHTML = E+F;
+}
+function myColor(){
+    let C = "Text";
+    let result = C.fontcolor("blue");
+    document.getElementById("Color").innerHTML = result;
+}
