@@ -43,3 +43,6 @@ document.write(C); //Decrement and display Text
 
 window.alert(Math.random()*500); //Pop-up window that displays Random Number between 0 and 500
 
+function clickRound1(){
+    document.getElementById("Math8").innerHTML = Math.round(9.7);
+}
