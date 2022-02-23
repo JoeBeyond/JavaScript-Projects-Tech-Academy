@@ -35,7 +35,7 @@ function clickEffect4(){
 
 var B = 30;
 B ++;
-document.write(B); //Increment and display Text
+document.write(B + "<br>"); //Increment and display Text
 
 var C = 30;
 C--;
