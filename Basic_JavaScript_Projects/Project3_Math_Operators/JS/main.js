@@ -27,3 +27,19 @@ function clickEffect3(){
     var moduleOperator = 50 % 7; //Module Operator
     document.getElementById("Math6").innerHTML = "When you divide 50 by 7, you have a remainder of: " + moduleOperator;
 }
+
+function clickEffect4(){
+    var A = 70;
+    document.getElementById("Math7").innerHTML = -A; //Negation Operator
+}
+
+var B = 30;
+B ++;
+document.write(B); //Increment and display Text
+
+var C = 30;
+C--;
+document.write(C); //Decrement and display Text
+
+window.alert(Math.random()*500); //Pop-up window that displays Random Number between 0 and 500
+

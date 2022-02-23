@@ -18,14 +18,21 @@
     <!--Begin Body-->
     <body>
 
-        <!--Text and Button Effects tied to JavaScript-->
-        <p id="Math1" onmouseover="hoverEffect1()">This paragraph line has hover effects :p!</p>
+        <!--Text and Button Effects, and a Math Object (Round) tied to JavaScript-->
+        <p id="Math1" onmouseover="hoverEffect1()">This paragraph line has hover effects :p !</p>
         <p id="Math2" onclick="clickEffect1()">This paragraph text is clickable whoo</p>
         <button id="Math3" onmouseover="hoverEffect2()">Hover over Me!</button>
         <button id="Math4" onclick="clickEffect2()">Click meee please</button>
         <p id="Math5" onmouseover="hoverEffect3()">Hover hover hover</p>
         <h1 id="Math6" onclick="clickEffect3()">What Happens when you Click this Header?</h1>
-    
+        <h2 id="Math7" ondblclick="clickEffect4()">Have you thought of Double Clicking?</h2>
+        
+        <!--Math Object-->
+        <p id="Math8"></p>
+        <script>
+            document.getElementById("Math8").innerHTML = Math.round(9.7);
+        </script>
+        
     <!--Begin Footer-->
     <footer>
         
