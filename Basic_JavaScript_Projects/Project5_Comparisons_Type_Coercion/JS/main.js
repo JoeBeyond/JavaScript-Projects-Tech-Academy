@@ -5,8 +5,13 @@ document.write(-3E310 + "<br>");
 document.write(10>5);
 document.write("<br>");
 document.write(10<5);
+document.write("<br>");
+document.write(5+5 == 10);
+document.write("<br>");
+document.write(5+5 == 15);
 console.log(5+5);
 console.log(3>5);
+
 
 function notNumber1(){
     document.getElementById("NaN1").innerHTML = 0/0
