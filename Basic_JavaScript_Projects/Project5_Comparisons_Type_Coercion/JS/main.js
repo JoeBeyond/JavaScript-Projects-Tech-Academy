@@ -1,5 +1,7 @@
-document.write(typeof "Word");
-document.write("A"+1);
+document.write(typeof "Word" + "<br>");
+document.write("A"+1 + "<br>");
+document.write(2E310 + "<br>");
+document.write(-3E310 + "<br>");
 
 function notNumber1(){
     document.getElementById("NaN1").innerHTML = 0/0
