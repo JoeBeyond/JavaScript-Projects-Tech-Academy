@@ -2,6 +2,9 @@ document.write(typeof "Word" + "<br>");
 document.write("A"+1 + "<br>");
 document.write(2E310 + "<br>");
 document.write(-3E310 + "<br>");
+document.write(10>5);
+document.write("<br>");
+document.write(10<5);
 
 function notNumber1(){
     document.getElementById("NaN1").innerHTML = 0/0
