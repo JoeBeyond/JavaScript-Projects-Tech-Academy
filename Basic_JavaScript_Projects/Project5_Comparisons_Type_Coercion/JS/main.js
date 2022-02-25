@@ -55,3 +55,11 @@ function notNumber2(){
 function notNumber3(){
     document.getElementById("NaN3").innerHTML = isNaN('101') //NaN Number
 }
+
+function notOperation1(){
+    document.getElementById("NotOp1").innerHTML = ! (100 < 1); //NOT Operator; Returns True; Double Negative
+}
+
+function notOperation2(){
+    document.getElementById("NotOp2").innerHTML = ! (100 > 1); //NOT Operator; Returns False
+}
