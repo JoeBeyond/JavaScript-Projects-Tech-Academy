@@ -43,6 +43,3 @@ function shipRegistration(){
     "Burt pilots a " + Burt.SpaceShip_Color + "-colored " + Burt.SpaceShip_Model +
     " manufactured by the Company, " + Burt.SpaceShip_Make + ", in the Galactic Era: " + Burt.SpaceShip_Era;
 }
-
-var X = function;
-document.write(X).innerHTML = result;
