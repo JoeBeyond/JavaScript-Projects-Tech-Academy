@@ -27,3 +27,19 @@ function myFunction(){
     "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
     " manufactured in " + Erik.Vehicle_Year;
 }
+
+function SpaceShip(Make, Model, Era, Color){
+    this.SpaceShip_Make = Make;
+    this.SpaceShip_Model = Model;
+    this.SpaceShip_Era = Era;
+    this.SpaceShip_Color = Color;
+}
+var Graxis = new SpaceShip("Nebulaton", "Gala-Star", 245, "Zyron");
+var AI92 = new SpaceShip("Lyrazon", "X9", 109, "Rust");
+var Burt = new SpaceShip("Light-Year", "Vortex-4", 158, "Prismatic");
+
+function shipRegistration(){
+    document.getElementById("New_and_This").innerHTML =
+    "Burt pilots a " + Burt.SpaceShip_Color + "-colored " + Burt.SpaceShip_Model +
+    " manufactured by the Company, " + Burt.SpaceShip_Make + ", in the Galactic Era: " + Burt.SpaceShip_Era;
+}
