@@ -33,7 +33,7 @@ function dateFunction1() {
 function customFunction1() {
     if (new Date().getSeconds() > 30) {
         document.getElementById("Custom_Function").innerHTML = "Half a minute hass passed at least";
-    }
+    } //Custom IF Statement that declares after a half minute has passed every minute
 }
 
 addNumbers1(); //Display results of Class
