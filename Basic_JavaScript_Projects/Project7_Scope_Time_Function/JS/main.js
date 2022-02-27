@@ -24,6 +24,12 @@ function divisionFunction1(){
     console.log(divisionFunction);
 }
 
+function dateFunction1() {
+    if (new Date().getHours() < 17) {
+        document.getElementById("Hours").innerHTML = "It's almost 5 whooo";
+    }
+}
+
 addNumbers1(); //Display results of Class
 addNumbers2();
 addNumbers3();
