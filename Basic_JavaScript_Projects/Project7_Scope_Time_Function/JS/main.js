@@ -27,6 +27,12 @@ function divisionFunction1(){
 function dateFunction1() {
     if (new Date().getHours() < 17) {
         document.getElementById("Hours").innerHTML = "It's almost 5 whooo";
+    } //IF Statement declaring if beofre 5pm, display value
+}
+
+function customFunction1() {
+    if (new Date().getSeconds() > 30) {
+        document.getElementById("Custom_Function").innerHTML = "Half a minute hass passed at least";
     }
 }
 
