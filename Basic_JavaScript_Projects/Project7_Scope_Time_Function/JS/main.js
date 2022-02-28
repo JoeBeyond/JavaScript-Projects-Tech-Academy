@@ -36,6 +36,17 @@ function customFunction1() {
     } //Custom IF Statement that declares after a half minute has passed every minute
 }
 
+function ifElse1() {
+    Sides = document.getElementById("Sides").value
+    if (Sides != 8) {
+        Display = "Incorrect.";
+    }
+    else {
+        Display = "You are Correct!"
+    }
+    document.getElementById("Guess").innerHTML = Display;
+}
+
 addNumbers1(); //Display results of Class
 addNumbers2();
 addNumbers3();
