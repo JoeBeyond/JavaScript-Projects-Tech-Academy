@@ -32,6 +32,6 @@ function num2string() { //Function that converts number to string; Number Method
 
 function Precise_Method() {
     var F = 25.37579118; //Function that uses Precision Method to accurately display data
-    document.getElementById("precision").innerHTML = "Success! Laceration debuff points: " + F.toPrecision(10);
+    document.getElementById("precision").innerHTML = "Success! Laceration debuff points: " + F.toPrecision(5);
 }
 
