@@ -25,7 +25,7 @@ function search_Function() {
     document.getElementById("Search").innerHTML = position + " Gold Coins!";
 }
 
-function num2string() {
+function num2string() { //Function that converts number to string
     var E = 13
     document.getElementById("numstring").innerHTML = E + " Damage taken!".toString();
 }
