@@ -9,7 +9,7 @@ function concatenate_Function() {
 
 function sliceMethod() {
     var Sentence = "Years have passed since the Yam had grown.";
-    var Section = Sentence.slice(10,20);
+    var Section = Sentence.slice(5,31);
     document.getElementById("Slice").innerHTML = Section; //Function utilizing slice method to display a chunk of string
 }
 
@@ -23,4 +23,9 @@ function search_Function() {
     let text = "The river ran dry.";
     let position = text.search("river"); //Function utilizing search method
     document.getElementById("Search").innerHTML = position + " Gold Coins!";
+}
+
+function num2string() {
+    var E = 13
+    document.getElementById("numstring").innerHTML = E + " Damage taken!".toString();
 }
