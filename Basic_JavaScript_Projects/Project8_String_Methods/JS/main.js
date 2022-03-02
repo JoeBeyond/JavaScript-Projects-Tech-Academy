@@ -25,7 +25,13 @@ function search_Function() {
     document.getElementById("Search").innerHTML = position + " Gold Coins!";
 }
 
-function num2string() { //Function that converts number to string
+function num2string() { //Function that converts number to string; Number Method
     var E = 13
     document.getElementById("numstring").innerHTML = E + " Damage taken!".toString();
 }
+
+function Precise_Method() {
+    var F = 25.37579118; //Function that uses Precision Method to accurately display data
+    document.getElementById("precision").innerHTML = "Success! Laceration debuff: " + F.toPrecision(10);
+}
+
