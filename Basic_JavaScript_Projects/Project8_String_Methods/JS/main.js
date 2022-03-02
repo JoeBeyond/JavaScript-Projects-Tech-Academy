@@ -10,5 +10,5 @@ function concatenate_Function() {
 function sliceMethod() {
     var Sentence = "Years have passed since the Yam had grown.";
     var Section = Sentence.slice(10,20);
-    document.getElementById("Slice").innerHTML = Section;
+    document.getElementById("Slice").innerHTML = Section; //Function utilizing slice method to display a chunk of string
 }
