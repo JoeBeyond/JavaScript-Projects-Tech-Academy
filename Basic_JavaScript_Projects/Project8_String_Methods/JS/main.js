@@ -42,7 +42,7 @@ function toFixedFunction() {
 }
 
 function value_Function() {
-    let Fleetfeet = "+10 to walking speed!";
+    let Fleetfeet = "+10 to walking speed!"; //Function calling the return of a primitive value of a string
     let Effect = Fleetfeet;
     document.getElementById("Value").innerHTML = Effect;
 }
