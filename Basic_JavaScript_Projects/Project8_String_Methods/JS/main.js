@@ -41,7 +41,7 @@ function toFixedFunction() {
     document.getElementById("2Fixed").innerHTML = Deci + " Miles to Fort A";
 }
 
-function valueOf() {
+function value_Function() {
     let Fleetfeet = "+10 to walking speed!";
     let Effect = Fleetfeet;
     document.getElementById("Value").innerHTML = Effect;
