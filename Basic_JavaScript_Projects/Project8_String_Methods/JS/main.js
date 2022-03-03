@@ -35,3 +35,14 @@ function Precise_Method() {
     document.getElementById("precision").innerHTML = "Success! Laceration debuff points: " + F.toPrecision(5);
 }
 
+function toFixedFunction() {
+    let number = 73.89078300214233081; //Function that uses a toFixed Method to display a fixed amount of characters to the right of the decimal position
+    let Deci = number.toFixed(6);
+    document.getElementById("2Fixed").innerHTML = Deci + " Miles to Fort A";
+}
+
+function valueOf() {
+    let Fleetfeet = "+10 to walking speed!";
+    let Effect = Fleetfeet;
+    document.getElementById("Value").innerHTML = Effect;
+}
