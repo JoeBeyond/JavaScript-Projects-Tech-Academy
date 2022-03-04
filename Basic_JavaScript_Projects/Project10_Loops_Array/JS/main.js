@@ -23,3 +23,13 @@ function for_Loop() {
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
 } //Function; For Loop that iterates through a list
+
+function array_Function() { //Function of Array calling index 3
+    var Fruit = [];
+    Fruit[0] = "Apple";
+    Fruit[1] = "Kiwi";
+    Fruit[2] = "Banana";
+    Fruit[3] = "Raspberry";
+    document.getElementById("Array").innerHTML = "The fourth item on this list is: " + Fruit[3];
+
+}
