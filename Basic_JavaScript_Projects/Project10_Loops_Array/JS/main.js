@@ -1,4 +1,4 @@
-function Call_Loop () {
+function Call_Loop () { //Function; Loop that decrements until zero then displays a message
     var Digit = "";
 	var X = 30;
 	while ( X > 0) {
@@ -8,7 +8,7 @@ function Call_Loop () {
 	document.getElementById("Loop").innerHTML = Digit + "<br>" + " Finished!";
 }
 
-function string_Length1() {
+function string_Length1() { //Function that returns the length of a string as a number
     let text = "";
     let length = text.length;
     document.getElementById("stringlength").innerHTML = length;
