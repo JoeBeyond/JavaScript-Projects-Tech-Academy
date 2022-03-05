@@ -48,3 +48,8 @@ function let1Function() {
     }
     document.write("<br>" + A);
 }
+
+function return_Function() { //Function that returns the value of PI
+    return Math.PI;
+}
+document.getElementById("Return").innerHTML = return_Function();
