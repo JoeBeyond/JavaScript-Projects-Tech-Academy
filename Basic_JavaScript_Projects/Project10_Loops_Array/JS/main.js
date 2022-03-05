@@ -15,14 +15,14 @@ function string_Length1() { //Function that returns the length of a string as a 
 }
 
 var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
-var Content = "";
+var Content = ""; //Function; For Loop that iterates through a list
 var Y;
 function for_Loop() {
     for (Y = 0; Y < Instruments.length; Y++) {
         Content += Instruments[Y] + "<br>";
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
-} //Function; For Loop that iterates through a list
+} 
 
 function array_Function() { //Function of Array calling index 3
     var Fruit = [];
@@ -32,4 +32,19 @@ function array_Function() { //Function of Array calling index 3
     Fruit[3] = "Raspberry";
     document.getElementById("Array").innerHTML = "The fourth item on this list is: " + Fruit[3];
 
+}
+
+function constant_function() { //Function featuring 2 const variables
+    const Smoothie = {type:"Ice-Cream", flavor:"Caramel-Apple", size:"Large"};
+    Smoothie.price = "6.49";
+    document.getElementById("Constant").innerHTML = "The " + Smoothie.size + " " + Smoothie.type + " " + Smoothie.flavor + " Smoothie Costs " + Smoothie.price;
+}
+
+function let1Function() {
+    var A = 25;
+    document.write(A); { //LET Keyword Function
+        let A = 50;
+        document.write("<br>" + A);
+    }
+    document.write("<br>" + A);
 }
