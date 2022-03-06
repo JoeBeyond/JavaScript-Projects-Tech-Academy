@@ -53,3 +53,11 @@ function return_Function() { //Function that returns the value of PI
     return Math.PI;
 }
 document.getElementById("Return").innerHTML = return_Function();
+
+function let2Function() { //LET Function with an Object with properties and a method(s)
+    let Box = []
+    Box[0] = "2-Dimensional";
+    Box[1] = "1 Face";
+    Box[2] = "4 Sides";
+    document.getElementById("box").innerHTML = "This Box is " + Box[0] + " with " + Box[1] + " and " + Box[2];
+}
