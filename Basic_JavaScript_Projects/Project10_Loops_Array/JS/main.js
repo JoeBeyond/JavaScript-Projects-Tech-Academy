@@ -61,3 +61,21 @@ function let2Function() { //LET Function with an Object with properties and a me
     Box[2] = "4 Sides";
     document.getElementById("box").innerHTML = "This Box is " + Box[0] + " with " + Box[1] + " and " + Box[2];
 }
+
+function breakFunction() { //Break Statement in a Function; counts backwards from 10 until it reaches 3 in which it breaks out of the loop
+    let countdown = "";
+    for (let a = 10; a > 3; a--) {
+        if (a == 3) break;
+        countdown += a + "<br>";
+    }
+    document.getElementById("break").innerHTML = countdown;
+}
+
+function continue2_function() { //Continue Statement in a Function; counts upwards from 1 until 16, but at assigned variables, continues past the number
+    let countup = "";
+    for (let z = 1; z < 16; z++) {
+        if (z === 4 || z === 9 || z === 13) continue;
+        countup += z + "<br>";
+    }
+    document.getElementById("continue").innerHTML = countup;
+}
