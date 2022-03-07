@@ -1,0 +1,13 @@
+.bodyEdit   {
+    background-color:coral;
+    color:blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+.bodyEdit    input   {
+    margin:7.5px;
+    border:dashed indigo;
+    border-radius:20px;
+    border-width:0.9cm;
+}
