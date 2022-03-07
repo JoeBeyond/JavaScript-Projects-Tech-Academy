@@ -33,6 +33,7 @@ function getClass1() { //Document.getElementByClassName method; calls the subpro
     Apple[2].innerHTML = "Apple Pie and Vanilla Ice Cream."
 }
 
+//Variables and values
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
