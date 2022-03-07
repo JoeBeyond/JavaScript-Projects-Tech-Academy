@@ -27,3 +27,8 @@ function Color_Function() { //Switch Statement that gives a list of colors with 
     }
     document.getElementById("Output").innerHTML = Color_Output;
 }
+
+function getClass1() { //Document.getElementByClassName method; calls the subprogram to h3 tag ( also index 2 ) in html file
+    var Apple = document.getElementsByClassName("GetClass");
+    Apple[2].innerHTML = "Apple Pie and Vanilla Ice Cream."
+}
