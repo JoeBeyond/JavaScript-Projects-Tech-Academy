@@ -32,3 +32,15 @@ function getClass1() { //Document.getElementByClassName method; calls the subpro
     var Apple = document.getElementsByClassName("GetClass");
     Apple[2].innerHTML = "Apple Pie and Vanilla Ice Cream."
 }
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(-10, -10, 200, 0);
+grd.addColorStop(0, "gold");
+grd.addColorStop(1, "blue");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
