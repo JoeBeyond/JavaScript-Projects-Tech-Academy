@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>Webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+
+    <body>
+
+        <p id="AB"></p>
+        <p id="demo"></p>
+
+        <script>
+            let a = 12.5; //Inline Normal Funtion.
+            let b = 12.5;
+            document.getElementById("AB").innerHTML = a + b;
+        </script>
+        
+        <script>
+            let myFunction = (a, b) => a * b; //Inline Arrow Function; quicker way to write inline function or otherwise.
+            document.getElementById("demo").innerHTML = myFunction(5, 5);
+        </script>
+
+    <footer>
+        
+    </footer>
+
+    </body>
+
+</html>
