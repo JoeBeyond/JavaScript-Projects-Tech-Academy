@@ -4,7 +4,7 @@ let activePlayer = 'X';
 let selectedSquares = [];
 
 //This function is for placing an x or o in a square.
-function XOrO(squareNumber)    {
+function placeXOrO(squareNumber)    {
     // This condition ensures a square hasn't been selected already.
     // The .some() method is used to check each element of selectedSquare array to see if it contains the square number clicked on.
     if (!selectedSquares.some(element => element.includes(squareNumber)))    {
@@ -13,11 +13,11 @@ function XOrO(squareNumber)    {
         // Thiscondition checks who's turn it is.
         if (activePlayer === 'X')   {
             // If activePlayer is equal to 'X', the x.png is placed in HTML.
-            select.style.backgroundImage = 'url("images/x.png")';
+            select.style.backgroundImage = 'url("Images/x.png")';
             // Active player may only be 'X' or '0' so, if not 'X' it must be'0'.
         } else {
             // If activePlayer is equal to '0', the o.png is placed is HTML.
-            select.style.backgroundImage = 'url("images/o.png")';
+            select.style.backgroundImage = 'url("Images/o.png")';
         }
         // squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
