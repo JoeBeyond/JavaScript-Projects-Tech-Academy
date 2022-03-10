@@ -218,3 +218,12 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2)    {
     // This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
     setTimeout(function () { clear(); resetGame(); }, 1000);
 }
+
+// This function resets the game in the vent of a tie or a win.
+function resetGame() {
+    for (let i = 0; i < 9; i++) {
+        let square = document.getElementById(String(i))
+        square.style.backgroundImage = ''
+    }
+    selectedSquares = [];
+}
