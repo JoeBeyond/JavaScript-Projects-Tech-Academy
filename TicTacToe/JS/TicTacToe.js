@@ -13,11 +13,11 @@ function placeXOrO(squareNumber)    {
         // Thiscondition checks who's turn it is.
         if (activePlayer === 'X')   {
             // If activePlayer is equal to 'X', the x.png is placed in HTML.
-            select.style.backgroundImage = 'url("../Images/x.png")';
+            select.style.backgroundImage = 'url("../Images/evgeniy-dolzhenkov-21.jpg")';
             // Active player may only be 'X' or '0' so, if not 'X' it must be'0'.
         } else {
             // If activePlayer is equal to '0', the o.png is placed is HTML.
-            select.style.backgroundImage = 'url("../Images/o.png")';
+            select.style.backgroundImage = 'url("../Images/ben-kane-roman-soldier.jpg")';
         }
         // squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
@@ -38,7 +38,7 @@ function placeXOrO(squareNumber)    {
 
 
         // This function plays placement sound.
-        audio('../Media/place.mp3');
+        audio('../Media/zapsplat_warfare_sword_blade_single_slice_ground_small_stones_001_78296.mp3');
         // This condition checks to see if it is computers turn.
         if (activePlayer === 'O')   {
             // This function disables clicking for computer choice.
@@ -111,9 +111,10 @@ function checkWinConditions()   {
     // This condition checks for tie. If none of the above conditions register and 9 squares are selected the code executes.
     else if (selectedSquares.length >= 9)   {
         // This function plays the tie game sound.
-        audio('../Media/tie.mp3');
+        audio('../Media/zapsplat_musical_drum_tom_hit_strike_short_pattern_rhythm_football_chant_58456.mp3');
         // This function sets a .3 second timer before the resetGame is called.
-    }   setTimeout(function ()  { resetGame(); }, 1000)
+        setTimeout(function ()  { resetGame(); }, 1000)
+    }   
 
     // This function checks if an array includes 3 strings. It is used to check for each win condition.
     function arrayIncludes(squareA, squareB, squareC)   {
@@ -146,6 +147,8 @@ function audio(audioURL)    {
 function drawWinLine(coordX1, coordY1, coordX2, coordY2)    {
     // This line accesses out HTML canvas element.
     const canvas = document.getElementById('win-lines')
+    // This line gives us the access to methods and properties to use on canvas.
+    const c = canvas.getContext('2d')
     // This line indicates where the start of a lines x axis is.
     let x1 = coordX1,
         // This line indicates where the start of a lines y axis is.
@@ -213,6 +216,8 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2)    {
     }
     // This line disallows clicking while the win sound is playing.
     disableClick();
+    // This line plays the win sounds.
+    audio('../Media/sound_ex_machina_medium_crowd_of_warriors_yelling_battle_cries_100_people_665.mp3')
     // This line calls our main animation loop.
     animateLineDrawing();
     // This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.

@@ -38,3 +38,7 @@ canvas  {
     /* This property makes our canvas invisible */
     pointer-events:none;
 }
+
+footer  {
+    text-align:center;
+}
