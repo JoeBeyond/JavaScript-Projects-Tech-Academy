@@ -10,8 +10,9 @@ html    {
 }
 
 .calculator {
-    border:1.2px solid darkslategray;
-    border-radius:7px;
+    border:2.6px ridge rgba(100, 45, 247, 0.7);
+    border-radius:13.5px;
+    border-width:.15cm;
     position:absolute;
     top:50%;
     left:50%;
@@ -22,9 +23,10 @@ html    {
 .calculator-screen  {
     width:100%;
     font-size:5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     height:80px;
     border:none;
-    background-color:black;
+    background-color:palevioletred;
     color:white;
     text-align:right;
     padding-right:20px;
@@ -35,47 +37,48 @@ html    {
 button  {
     height:70px;
     border-radius:3px;
-    border:1px solid darkslategray;
+    border:1px solid gold;
     background-color:transparent;
     font-size:3.2rem;
-    color:black;
-    background-image:linear-gradient(to bottom,transparent,transparent 50%, rgba(0, 0, 0, 0.6));
-    text-shadow:0 1px rgba(255, 255, 255, 0.4);
-    box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 0 rgba(255, 255, 255, 0.5),
-        0 1px 0 0 rgba(255, 255, 255, 0.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:gold;
+    background-image:linear-gradient(to bottom,transparent,transparent 50%, rgba(59, 194, 111, 0.6));
+    text-shadow:0 1px rgba(244, 248, 2, 0.4);
+    box-shadow:inset 0 0 0 1px rgba(55, 25, 255, 0.5),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 0 rgba(187, 25, 138, 0.911),
+        0 1px 0 0 rgba(216, 49, 152, 0.5);
 }
 
 button:hover    {
-    background-color:#e1e1e1;
+    background-color:aquamarine;
 }
 
 .operator   {
-    color:black;
+    color:gold;
     background-image:linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,0.5));
-    background-color:lightgray;
+    background-color:mediumvioletred;
 }
 
 .all-clear  {
-    background-color:red;
-    border-color:darkslategray;
-    color:#fff;
+    background-color:gold;
+    border-color:mediumblue;
+    color:mediumvioletred;
 }
 
 .all-clear:hover    {
-    background-color:darkred;
+    background-color:lightgreen;
 }
 
 .equal-sign {
-    background-color:darkblue;
-    border-color:darkslategray;
-    color:#fff;
+    background-color:cornflowerblue;
+    border-color:gold;
+    color:tomato;
     height:100%;
     grid-area: 2 / 4 / 6 / 5;
 }
 
 .equal-sign:hover   {
-    background-color:darkblue;
+    background-color:mediumaquamarine;
 }
 
 .calculator-keys    {
