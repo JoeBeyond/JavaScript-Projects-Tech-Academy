@@ -1,15 +1,19 @@
 function getReceipt()   {
     // This initializes our string so it can get passed from function to function, growing line by line into a full receipt.
     var text1 = "<h3>You ordered:</h3>";
+    // This establishes a variable as a number.
     var runningTotal = 0;
     var sizeTotal = 0;
+    // Variable called as class; for inputs.
     var sizeArray = document.getElementsByClassName("size");
+    // Loop; checks against array for a choice of one size.
     for (var i = 0; i < sizeArray.length; i++)  {
         if (sizeArray[i].checked)   {
             var selectedSize = sizeArray[i].value;
             text1 = text1+selectedSize+"<br>";
         }
     }
+    // Determines size and type of pizza.
     if (selectedSize === "Personal Pizza")  {
         sizeTotal = 6;
     } else if (selectedSize === "Small Pizza") {
@@ -21,6 +25,7 @@ function getReceipt()   {
     } else if (selectedSize === "Extra Large Pizza")    {
         sizeTotal = 16;
     }
+    // Assigns values to the array of pizzas in the loops above.
     runningTotal = sizeTotal;
     console.log(selectedSize+" = $"+sizeTotal+".00");
     console.log("size text1: "+text1);
@@ -28,7 +33,7 @@ function getReceipt()   {
     // These variables will get passed on to each function.
     getTopping(runningTotal,text1);
 };
-
+// Allows the selection of toppings, as well as combinations of toppings on the pizzas.
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
@@ -40,12 +45,14 @@ function getTopping(runningTotal,text1) {
             text1 = text1+toppingArray[j].value+"<br>";
         }
     }
+    // Allows counting of toppings.
     var toppingCount = selectedTopping.length;
     if (toppingCount > 1)   {
         toppingTotal = (toppingCount - 1);
     } else {
         toppingTotal = 0;
     }
+    // Prints the values tied together as a multiple strings.
     runningTotal = (runningTotal + toppingTotal);
     console.log("total selected topping items: "+toppingCount);
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
