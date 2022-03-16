@@ -13,8 +13,9 @@
     <body>
 
         <script>
-
+            // Allow a function to operate.
             $(document).ready(function(){
+                // Start of jQuery html structure.
                 $("html").append(
                     "<body>\
                         <div id='container'>\
@@ -26,16 +27,20 @@
                             </div>\
                         </div>\
                     </body>"
+                    // END jQuery html structure.
                 );
+                // Paragraph 2 gets a red colored text.
                 $("#2").css({"color":"red"});
+                // Paragraph 3; gets a function that hides header 1 on click.
                 $("#3").click(function(){
                     $('h1').hide();
                 });
-                // Binding multiple events with different handlers
+                // Binding multiple events with different handlers ( check console in dev tools ).
                 $("p").on({
                     "click": function()  { console.log("clicked!"); },
                     "mouseover": function() { console.log("hovered!"); }
                 });
+                // Hide paragraph 1 over the course of 5 seconds.
                 $("#1").hide(5000);
             }); 
 
