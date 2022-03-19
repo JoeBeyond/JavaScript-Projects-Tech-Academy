@@ -1,0 +1,16 @@
+body    {
+    opacity:1;
+    transition:5s opacity;
+    text-align:center;
+    background-color:yellow;
+}
+
+p   {
+    color:purple;
+    padding-top:20%;
+}
+
+body.fade-out   {
+    opacity:0;
+    transition:none;
+}
