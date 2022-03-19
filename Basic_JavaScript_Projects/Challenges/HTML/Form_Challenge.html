@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>Form Challenge</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+
+    <body>
+
+
+        <form name="myForm" onsubmit="validateForm()" method="post">
+
+            <h1>Sandwich Industries Contact Form</h1>
+
+            <label for="firstName">First Name</label><br>
+            <input id="firstName" name="firstName" type="text" value=""><br>
+
+            <label for="lastName">Last Name</label><br>
+            <input id="lastName" name="lastName" type="text" value=""><br>
+
+            <label for="email_1">Email</label><br>
+            <input id="email_1" name="email_1" type="email" value=""><br>
+
+            <label for="phoneNumber">Phone Number (XXX-XXX-XXXX)</label><br>
+            <input id="phoneNumber" name="phoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="orderNumber">Order Number</label><br>
+            <input id="orderNumber" name="orderNumber" type="text" value=""><br>
+            <br>
+
+            <input type="submit" name="submit" value="Submit">
+
+        </form>
+
+        <script src="../JS/Form_Challenge.js"></script>
+
+    </body>
+
+</html>
