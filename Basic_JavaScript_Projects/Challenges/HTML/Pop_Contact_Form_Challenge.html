@@ -6,30 +6,31 @@
         <title>Webpage</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <link rel="stylesheet" type="text/css" href="../CSS/Pop_Contact_Form_Challenge.css">
+
     </head>
 
     <body>
 
+        <button class="open-button" onclick="openForm()">Open Form</button>
 
-
-        <div>
-            <form>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
                 <h1>Login</h1>
 
-                <label><strong>Email</strong></label>
-                <input>
+                <label for="email"><strong>Email</strong></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
 
-                <label><strong>Password</strong></label>
-                <input>
+                <label for="psw"><strong>Password</strong></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button>Login</button>
-                <button>Close</button>
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 
             </form>
         </div>
         
-    
+    <script src="../JS/Pop_Contact_Form_Challenge.js"></script>
 
     </body>
 
