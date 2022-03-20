@@ -1,0 +1,21 @@
+* {
+    box-sizing:border-box;
+}
+
+.turkey {
+    padding:25px;
+    transition:transform .2s;
+    width:500px;
+    height:500px;
+    margin:0 auto;
+}
+
+.turkey:hover {
+    -ms-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+p   {
+    padding-top:1.2in;
+}
