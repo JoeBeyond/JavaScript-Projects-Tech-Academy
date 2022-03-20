@@ -1,0 +1,18 @@
+html {
+    scroll-behavior:smooth;
+}
+
+#trio1 {
+    height:800px;
+    background-color:rgb(41, 188, 233);
+}
+
+#trio2 {
+    height:800px;
+    background-color:aqua;
+}
+
+#trio3 {
+    height:800px;
+    background-color:darkturquoise;
+}
