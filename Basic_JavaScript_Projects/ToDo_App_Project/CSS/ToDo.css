@@ -59,3 +59,7 @@ footer.sticky {
     height:800px;
     background-color:darkturquoise;
 }
+
+.remove {
+    padding-bottom:5px;
+}
