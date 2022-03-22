@@ -1,9 +1,8 @@
 # JavaScript-Projects-Tech-Academy
 For All Projects pertaining to the Course 5 JavaScript Course for The Tech Academy. Updates will come as Projects are completed.
 
--JavaScript / index.html / Hello, World! ; was created on 2.20.2022 .
+## Check out Basic_JavaScript_Projects to see what I've worked on in this course!
 
---The file features a basic format of HTML referencing JavaScript, to produce a box that displays Hello World!
-and has a clickable button that says ok.
+My Tic Tac Toe project is a hoot and a holler, and the caluclator will solve all your problems!
 
 **+-+-+ 0 0 +-+-+ 0 0 +-+-+ 0 0 +-+-+ 0 0 +-+-+ 0 0 +-+-+**
