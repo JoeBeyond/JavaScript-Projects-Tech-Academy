@@ -18,7 +18,7 @@ For All Projects pertaining to the Course 5 JavaScript Course for The Tech Acade
 
 **+-+-+ 0 0 +-+-+ 0 0 +-+-+ 0 0 +-+-+ 0 0 +-+-+ 0 0 +-+-+**
 
-## Caluclator:
+## Calculator:
 This project features a basic calculator with 4 basic functions, and styled in CSS using colors inspired by spring.
 
 ## Pizza Menu:
