@@ -33,4 +33,4 @@ This project features a basic tic tac toe game, with a fun twist on the context,
 These challenges I also had fun with. They tested me good and I wanted people to see some of my creativity.
 
 ## Project8:
-A little, done in the moment "kinda" game, using string methods to create events in which the user may find themselves.
+A little, done in the moment "kinda" game, using string methods to create events in which the user may find themselves
